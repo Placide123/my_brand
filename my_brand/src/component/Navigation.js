@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function Navigation() {
           } sm:flex sm:items-center sm:w-auto w-full`}
         >
           <li className="pr-3 pl-3 border-2 border-lime-300 mr-2">Resume</li>
-          <li>Login</li>
+          <li className="hover:bg-lime-300 p-2 hover:rounded"><NavLink to="/login"><span>LOGIN</span></NavLink></li>
         </ul>
       </div>
     </nav>
