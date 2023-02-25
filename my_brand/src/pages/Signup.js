@@ -23,9 +23,9 @@ export default function Signup() {
                         <input type="password" placeholder="Password" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"></input>
                     </div>
                     <button className="w-full text-white bg-lime-300 hover:bg-lime-500 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">SIGN UP</button>
-                    <p class="text-sm font-light text-white">
+                    <p className="text-sm font-light text-white">
                         Already have an account?
-                        <NavLink to="/login" class="font-medium text-primary-600 hover:underline"><span className="underline pl-2 font-medium">LOGIN</span></NavLink>
+                        <NavLink to="/login" className="font-medium text-primary-600 hover:underline"><span className="underline pl-2 font-medium">LOGIN</span></NavLink>
                     </p>
                 </form>
             </div>

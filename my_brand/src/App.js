@@ -2,6 +2,9 @@ import {BrowserRouter as Router, Routes,Route } from "react-router-dom"
 import Login from "./pages/Login"
 import Holder from "./pages/Holder"
 import Signup from "./pages/Signup"
+import Dashboard from "./component/Dashboard"
+import List from "./pages/List"
+import TableUser from "./pages/Dashboardforuser"
 
 export default function App() {
   return (
@@ -10,7 +13,12 @@ export default function App() {
         <Route path="/" exact element={<Holder/>}/>
         <Route path="/login" exact element={<Login/>}/>
         <Route path="/signup" exact element={<Signup/>}/>
+        <Route path="/dashboard" exact element={<Dashboard/>}/>
+        <Route path="/list" exact element={<List/>}/>
+        <Route path="/user" exact element={<TableUser/>}/>
       </Routes>
+
+
     </Router>
   )
 }

@@ -5,15 +5,16 @@ import Service from "./Service"
 import Message from "./Message"
 import Footer from "../component/Footer"
 
+
 export default function Holder() {
   return (
-<>
-<Navigation/>
-    <Homepage />
-    <AboutUs />
-    <Service />
-    <Message />
-    <Footer />
-</>
+    <>
+      <Navigation />
+      <Homepage />
+      <AboutUs />
+      <Service />
+      <Message />
+      <Footer />
+    </>
   );
 }
