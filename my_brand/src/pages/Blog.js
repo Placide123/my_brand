@@ -10,7 +10,7 @@ import { RiSearchLine } from "react-icons/ri";
 import { RiArrowLeftSFill } from "react-icons/ri";
 import { RiArrowRightSFill } from "react-icons/ri";
 
-function List() {
+function Blog() {
 
   const [deleDataModel, setDelDataModel] = useState(false);
   const deleteModel = () => {
@@ -22,34 +22,42 @@ function List() {
       {/* ====================== Start::  deleteDataModel =============================== */}
 
       <div
-        className={`min-h-full -ml-72 -mt-14 w-screen z-50 bg-opacity-30 backdrop-blur-sm fixed flex items-center justify-center px-4 ${
-          deleDataModel === true ? "block" : "hidden"
-        }`}
+        className={`min-h-full -ml-72 -mt-14 w-screen z-50 bg-opacity-30 backdrop-blur-sm fixed flex items-center justify-center px-4 ${deleDataModel === true ? "block" : "hidden"
+          }`}
       >
         <div className="bg-white w-1/2 shadow-2xl rounded-lg p-4 pb-8">
           <div className="card-title w-full flex  flex-wrap justify-center items-center  ">
             <h1 className="font-bold text-sm text-center w-11/12">
-              Delete Client
+              Add a Blog
             </h1>
             <hr className=" bg-primary border-b w-full" />
           </div>
           <div className="card-body">
             <form className=" px-8">
               <div>
-                <h2 className="text-base m-4">
-                  Do you really want permanently delete{" "}
-                  <span className="italic text-black"></span>
-                </h2>
+                <div className="flex flex-col">
+                  <label className="block mb-2 text-sm font-medium text-black">Blog Title</label>
+                  <input type="text" placeholder="Blog Title" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 mb-2"></input>
+                </div>
+                <div className="flex flex-col">
+
+                  <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload Your picture</label>
+                  <input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50  focus:outline-none" id="file_input" type="file"></input>
+                </div>
+                <div className="flex flex-col">
+                  <label className="block mb-2 text-sm font-medium text-black">Blog Description</label>
+                  <textarea type="password" placeholder="Blog Description" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 mb-2"></textarea>
+                </div>
               </div>
-              <div className="w-full flex justify-between">
+              <div className="w-full flex">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                  Add Blog
+                </button>
                 <button
-                  className="btn btn-danger light shadow-none"
+                  className="border-2 border-blue-500 text-blue-500 hover:text-white hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
                   onClick={(e) => deleteModel(e.preventDefault())}
                 >
                   Cancel
-                </button>
-                <button className="btn btn-outline-danger btn-s shadow-none">
-                  remove
                 </button>
               </div>
             </form>
@@ -60,7 +68,7 @@ function List() {
 
       <div className="w-4/5 ml-24 mt-10 relative">
         <h1 className=" border-b border-gray-300 font-bold text-blue-800">
-          Your Listings
+            List of Blogs
         </h1>
         <hr />
         <div className="flex item-center justify-between mt-5">
@@ -76,7 +84,7 @@ function List() {
             <span>Sort by:</span>
             <select className="form-select px-2 py-1.5 ml-2">
               <option selected className="text-[12px]">
-                Lastes
+                Latest
               </option>
               <option className="text-[12px]">Option 2</option>
               <option className="text-[12px]">Option 3</option>
@@ -94,7 +102,7 @@ function List() {
           <div className="flex mt-5 bg-white w-[49%] mr-[2%] ">
             <img
               src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt="a person" 
+              alt="a person"
               className="w-36 h-28 object-cover mr-4"
             />
             <div className=" w-full">
@@ -136,6 +144,7 @@ function List() {
             <img
               src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               className="w-36 h-28 object-cover mr-4"
+              alt="profile-picte"
             />
             <div className=" w-full">
               <div className="flex flex-col mb-0.5 bottom-b border-gray-200 w-full">
@@ -176,6 +185,7 @@ function List() {
             <img
               src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               className="w-36 h-28 object-cover mr-4"
+              alt="profile-pictu"
             />
             <div className=" w-full">
               <div className="flex flex-col mb-0.5 bottom-b border-gray-200 w-full">
@@ -216,6 +226,7 @@ function List() {
             <img
               src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               className="w-36 h-28 object-cover mr-4"
+              alt="profile-pict"
             />
             <div className=" w-full">
               <div className="flex flex-col mb-0.5 bottom-b border-gray-200 w-full">
@@ -256,6 +267,7 @@ function List() {
             <img
               src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               className="w-36 h-28 object-cover mr-4"
+              alt="profile-pic"
             />
             <div className=" w-full">
               <div className="flex flex-col mb-0.5 bottom-b border-gray-200 w-full">
@@ -296,6 +308,7 @@ function List() {
             <img
               src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               className="w-36 h-28 object-cover mr-4"
+              alt="profile-pic"
             />
             <div className=" w-full">
               <div className="flex flex-col mb-0.5 bottom-b border-gray-200 w-full">
@@ -369,4 +382,4 @@ function List() {
   );
 }
 
-export default List;
+export default Blog;

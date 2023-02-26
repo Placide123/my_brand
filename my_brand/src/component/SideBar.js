@@ -93,12 +93,12 @@ export default function SideBAr() {
           </li>
           <hr />
           <li className="pl-4">
-            <span className="text-gray-500"> LISTINGS</span>
+            <span className="text-gray-500"> Sub Menu</span>
           </li>
           <hr />
           <li className="pl-4">
             <NavLink
-              to="/list"
+              to="/blogs"
               //   className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg "
               className={(navdata) => {
                 if (navdata.isActive)
@@ -107,7 +107,7 @@ export default function SideBAr() {
               }}
             >
               <MdOutlineViewList className="text-blue-500"/>
-              <span className="ml-3">My listings</span>
+              <span className="ml-3">My Blogs</span>
             </NavLink>
           </li>
           <hr />
@@ -120,7 +120,7 @@ export default function SideBAr() {
                 return "flex items-center p-2 text-base font-normal text-gray-900 rounded-lg ";
               }}
             >
-              <HiOutlineClipboardCheck className="text-blue-500" />
+             <IoIosPeople  className="text-blue-500"/>
               <span className="ml-3">User</span>
               <span className="ml-3  bg-blue-500 px-2 py-0.5 rounded text-white">
                 3
