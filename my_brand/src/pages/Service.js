@@ -4,7 +4,7 @@ import Mobile from "../images/Mobile.png";
 
 export default function Service() {
   return (
-    <div className="p-7 m-10 border-2 border-lime-300">
+    <div className=" m-10 border-2 border-lime-300">
       <h1 className="flex justify-center items-center font-bold text-2xl">My service</h1>
       <div className="flex justify-between flex-wrap">
         <div className="w-full sm:w-auto md:w-1/3 p-3">

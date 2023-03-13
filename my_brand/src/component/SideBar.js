@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 
 export default function SideBAr() {
   return (
-    <div className="bg-white  pt-4 w-1/4 h-screen relative mt-0.5 overflow-y-auto">
+    <div className="bg-white  pt-4 w-1/4 h-[90vh] relative mt-0.5 overflow-y-auto">
       <div className="">
         <ul className="h-3/4">
           <li className="pl-4">

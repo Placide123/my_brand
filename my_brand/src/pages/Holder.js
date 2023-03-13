@@ -4,6 +4,7 @@ import AboutUs from "./Aboutus"
 import Service from "./Service"
 import Message from "./Message"
 import Footer from "../component/Footer"
+import Mywork from "../component/Mywork"
 
 
 export default function Holder() {
@@ -13,6 +14,7 @@ export default function Holder() {
       <Homepage />
       <AboutUs />
       <Service />
+      <Mywork />
       <Message />
       <Footer />
     </>

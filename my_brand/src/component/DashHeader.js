@@ -24,7 +24,7 @@ function Navbar() {
           className="flex items-center p-2 text-base text-white rounded bg-blue-700 font-bold mr-3"
         >
           <AiOutlinePlusCircle />
-          <span className="ml-3">Add New</span>
+          <span className="ml-3">LOG OUT</span>
         </a>
       </div>
     </nav>
