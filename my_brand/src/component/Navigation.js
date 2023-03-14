@@ -13,7 +13,13 @@ export default function Navigation() {
       <div>
         <h3 className="pl-3">TWC</h3>
       </div>
-      <div className="flex items-center">
+      <div>
+        <ul className="flex gap-2">
+          <li>Home</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div className="flex items-center gap-2">
         <button
           className="block sm:hidden border border-blue-600 p-1 rounded"
           onClick={toggleMenu}
@@ -21,9 +27,8 @@ export default function Navigation() {
           {isOpen ? "Close" : "Menu"}
         </button>
         <ul
-          className={`${
-            isOpen ? "block" : "hidden"
-          } sm:flex sm:items-center sm:w-auto w-full`}
+          className={`${isOpen ? "block " : "hidden"
+            } sm:flex sm:items-center sm:w-auto w-full`}
         >
           <li className="pr-3 pl-3 border-2 border-lime-300 mr-2">Resume</li>
           <li className="hover:bg-lime-300 p-2 hover:rounded"><NavLink to="/login"><span>LOGIN</span></NavLink></li>

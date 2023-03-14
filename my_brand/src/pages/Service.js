@@ -8,7 +8,7 @@ export default function Service() {
       <h1 className="flex justify-center items-center font-bold text-2xl">My service</h1>
       <div className="flex justify-between flex-wrap">
         <div className="w-full sm:w-auto md:w-1/3 p-3">
-          <img src={Design} alt="design" className="h-1/2 w-full object-contain" />
+          <img src={Design} alt="design" className="h-1/2 w-full object-contain sm:h-1/4" />
           <h1 className="font-bold text-lime-400 mt-2 flex justify-center mb-2">Web Design</h1>
           <p>
             Responsive websites built for an optimal user experience that
@@ -16,7 +16,7 @@ export default function Service() {
           </p>
         </div>
         <div className="w-full sm:w-auto md:w-1/3 p-3">
-          <img src={website} alt="website" className="h-1/2 w-full object-contain" />
+          <img src={website} alt="website" className="h-1/2 w-full object-contain sm:h-1/4" />
           <h1 className="font-bold text-lime-400 mt-2 flex justify-center mb-2">Website development</h1>
           <p>
             Awesome mobile application built with conscience as your want it to
@@ -24,7 +24,7 @@ export default function Service() {
           </p>
         </div>
         <div className="w-full sm:w-auto md:w-1/3 p-3">
-          <img src={Mobile} alt="Mobile" className="h-1/2 w-full object-contain" />
+          <img src={Mobile} alt="Mobile" className="h-1/2 w-full object-contain sm:h-1/4" />
           <h1 className="font-bold text-lime-400 mt-2 flex justify-center mb-2">Mobile development</h1>
           <p>
             Decentralized application built to run on a blockchain or
