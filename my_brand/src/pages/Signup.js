@@ -4,7 +4,7 @@ export default function Signup() {
     return (
         <div className="bg-[url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')] bg-cover">
             <div className="flex flex-col items-center justify-center px-12 py-24 mx-auto md:h-screen lg:py-0 border-2 border-white">
-                <h1 className="block mb-2 text-sm font-medium text-white text-xl "> Create your account</h1>
+                <h1 className="block mb-2 sm:text-sm font-medium text-white text-xl "> Create your account</h1>
                 <form className="space-y-8 md:space-y-6  h-196 w-96 p-4 mt-4">
                     <div className="flex flex-col">
                         <label className="block mb-2 text-sm font-medium text-white ">FirstName</label>

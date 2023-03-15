@@ -1,8 +1,11 @@
 
 export default function Message() {
   return (
-    <div className="max-w-md mx-auto my-10">
+    <div className="max-w-md mx-auto my-10 sm:mx-8">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div className="flex justify-center font-bold text-2xl text-primary font-serif">
+          <h1>Want to chat?</h1>
+        </div>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
             Name
@@ -39,7 +42,7 @@ export default function Message() {
         </div>
         <div className="flex items-center justify-between">
           <button
-            className="bg-lime-500 hover:bg-lime-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-primary hover:bg-lime-600 text-gray-200 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline sm:px-8"
             type="submit"
           >
             Send

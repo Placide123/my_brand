@@ -3,14 +3,14 @@ export default function Mywork() {
 
     return (
         <>
-            <div className="flex flex-col justify-center bg-primary h-[100vh] p-2 ">
+            <div className="flex flex-col justify-center bg-primary h-[100vh] p-2 sm:h-[230vh]">
                 <h1 className="p-2 flex justify-center font-bold text-2xl">My Current Work</h1>
-                <div className="flex lg:flex-row  m-10 border-2 border-lime-300 sm:flex-col">
-                    <div>
+                <div className="flex lg:flex-row  m-10 sm:flex-col sm:m-0 sm:gap-y-4">
+                    <div className="border-2 border-gray-200 rounded-lg">
                         <img
                             src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                             alt="a person"
-                            className="w-110 h-48 object-cover mr-4 rounded-t-lg"
+                            className="w-110 h-48 object-cover mr-4 rounded-t-lg sm:w-full"
                         />
                         <h2 className="text-4xl mb-2 flex justify-center font-bold">barefoot nomad</h2>
                         <p className="sm:text-sm font-serif">
@@ -21,11 +21,11 @@ export default function Mywork() {
                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
                     </div>
-                    <div>
+                    <div className="border-2 border-gray-200 rounded-lg">
                     <img
                             src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                             alt="a person"
-                            className="w-110 h-48 object-cover mr-4 rounded-t-lg"
+                            className="w-110 h-48 object-cover mr-4 rounded-t-lg sm:w-full"
                         />
                         <h2 className="text-4xl mb-2 flex justify-center font-bold">barefoot nomad</h2>
                         <p className="sm:text-sm font-serif">
@@ -36,11 +36,11 @@ export default function Mywork() {
                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
                     </div>
-                    <div>
+                    <div className="border-2 border-gray-200 rounded-lg">
                     <img
                             src="https://images.unsplash.com/photo-1670272504471-61a632484750?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                             alt="a person"
-                            className="w-110 h-48 object-cover mr-4 rounded-t-lg"
+                            className="w-110 h-48 object-cover mr-4 rounded-t-lg sm:w-full"
                         />
                         <h2 className="text-4xl mb-2 flex justify-center font-bold">barefoot nomad</h2>
                         <p className="sm:text-sm font-serif">

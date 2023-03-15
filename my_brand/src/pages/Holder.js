@@ -9,7 +9,7 @@ import Mywork from "../component/Mywork"
 
 export default function Holder() {
   return (
-    <>
+    <div className="flex flex-col sm:gap-y-1">
       <Navigation />
       <Homepage />
       <AboutUs />
@@ -17,6 +17,6 @@ export default function Holder() {
       <Mywork />
       <Message />
       <Footer />
-    </>
+    </div>
   );
 }
