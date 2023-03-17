@@ -1,8 +1,8 @@
 
 export default function Message() {
   return (
-    <div className="max-w-md mx-auto my-10 sm:mx-8">
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="max-w-md mx-auto md:my-10">
+      <form className="bg-white shadow-md rounded px-20 pt-2 pb-2 mb-4">
         <div className="flex justify-center font-bold text-2xl text-primary font-serif">
           <h1>Want to chat?</h1>
         </div>
