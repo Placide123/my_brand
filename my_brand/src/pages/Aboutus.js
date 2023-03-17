@@ -2,7 +2,7 @@ import Placide from "../images/placidebio.png";
 
 export default function AboutUs() {
   return (
-    <div className=" md:m-10 border-2 border-primary md:h-[90vh] flex flex-col m-0 h-[130vh] justify-center items-center">
+    <div className=" md:m-10 md:h-[90vh] flex flex-col m-0 h-[130vh] justify-center items-center">
       <h2 className="flex justify-center md:text-4xl font-bold md:mb-1 text-2xl mb-2 md:p-24 mt-2">About Me</h2>
       <div className="flex flex-col  md:flex-row justify-center items-center">
         <div className="flex justify-center items-center md:justify-center md:items-center md:w-10/12">
