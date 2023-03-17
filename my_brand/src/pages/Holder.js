@@ -12,11 +12,11 @@ export default function Holder() {
     <div className="flex flex-col sm:gap-y-1">
       <Navigation />
       <Homepage />
-      <AboutUs />
+      {/* <AboutUs />
       <Service />
       <Mywork />
       <Message />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
