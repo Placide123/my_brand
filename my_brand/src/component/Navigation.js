@@ -24,9 +24,9 @@ export default function Navigation() {
 
         </button>
         <div className={`${isOpen ? '' : 'hidden'
-          } w-full block flex-grow lg:block  lg:w-auto md:block md:w-auto`}
+          } w-full block flex-grow lg:block  lg:w-auto md:block md:w-auto absolute top-8 left-0 right-0  `}
           id="navbar-default">
-          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white md:justify-end ">
+          <ul class="flex flex-col p-4 mt-4 border bg-primary bg-opacity-50 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white md:justify-end ">
             <li>
               <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
             </li>
