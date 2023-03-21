@@ -12,7 +12,7 @@ export default function Holder() {
     <div className="flex flex-col gap-y-2 bg-gray-100">
       <Navigation />
       <Homepage />
-      <AboutUs />
+     <AboutUs />
       <Service />
       <Mywork />
       <Message />
