@@ -4,8 +4,8 @@ import { FaLinkedin } from 'react-icons/fa';
 
 export default function Homepage() {
   return (
-    <div className="flex flex-col-reverse m-2 md:flex-row md:m-6 lg:m-8 xl:m-9 h-[90vh] lg:w-[90%]  xl:w-[90%] ">
-      <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 xl:w-3/5">
+    <div className="flex flex-col-reverse m-2 md:flex-row md:m-6 lg:m-8 xl:m-9 h-[90vh] lg:w-[90%]  xl:w-[90%]">
+      <div className="flex flex-col justify-center items-center md:items-start md:w-1/2 xl:w-3/5 hover:animate-pulse">
         <h1 className="text-xl md:text-2xl xl:text-5xl font-bold md:ml-12 xl:ml-48 md:mb-4 ml-0 p-2">
          <span className="text-primary mr-1"> Hi, I'm Placide</span>
            TWIRINGIYIMANA.
@@ -24,7 +24,7 @@ export default function Homepage() {
         <button className=" md:ml-14 xl:ml-48 p-2 md:p-2 bg-primary font-bold rounded md:w-[45%] lg:w-1/4 xl:w-1/5 text-gray-100 text-xl w-full flex justify-center">Let's talk</button>
       </div>
       <div className="flex justify-center items-center md:justify-center md:items-center lg:w-2/5 xl:w-10/12  ">
-        <img src={Placide} alt="bio" className=" flex justify-center items-center xl:items-end object-contain w-10/12 lg:w-11/12 xl:w-9/12 h-[50vh]  rounded md:rounded-full md:object-contain md:h-[60%] border-primary border-4 border-none" />
+        <img src={Placide} alt="bio" className=" flex justify-center items-center xl:items-end object-contain w-10/12 lg:w-11/12 xl:w-9/12 h-[50vh] rounded-full md:object-contain md:h-[60%] border-primary border-4 border-none" />
       </div>
     </div>
   );
