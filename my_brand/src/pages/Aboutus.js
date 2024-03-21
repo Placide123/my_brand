@@ -8,7 +8,7 @@ export default function AboutUs() {
         <div className="md:w-[20%] flex justify-center items-center mt-5">
           <img src={Placide} alt="bio" className="w-36 h-36 rounded-full" />
         </div>
-        <div className="md:w-[70%] md:p-32 p-4">
+        <div className="md:w-[80%] md:p-32 p-4">
           <h2 className="flex justify-center text-bold text-3xl mb-5 ">About Me</h2>
           <p className="text-base font-normal text-justify md:text-lg font-serif">
             I am a Software Engineer with a love of collaborating with great
@@ -20,7 +20,8 @@ export default function AboutUs() {
             developers to become the best software engineers. I worked on the
             Andela Rwanda internal product, My responsibility in my team was
             front-end development, back-end development, testing coverage,
-            resolving conflict, and code reviews and deployment.
+            resolving conflict, and code reviews and deployment. I also joined <span className="font-bold text-primary ml-1">VisionFund Rwanda </span>as an 
+            <span className="font-bold text-primary ml-1">IT Support</span>, where I gained experience in Oracle database management using SQL and learned how to generate reports with data stored in the database.
             <p className="mt-5 text-base text-primary font-bold">
               My skills include:- ReactJs - Tailwind - Typescript - NodeJs - GraphQL - HTML5 & CSS3
               Socket.io - Apollo Server - Figma & UI/UX Design - MongoDB -

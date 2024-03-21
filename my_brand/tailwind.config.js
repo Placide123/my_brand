@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'sm': '375px',
-        'md': '768px',
-        'lg': '976px',
-        'xl': '1440px',
+        'sm': '640px',
+        'md': '769px',
+        'lg': '1024px',
+        'xl': '1280px',
       },
     },
     colors:{

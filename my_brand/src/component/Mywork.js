@@ -3,10 +3,10 @@ export default function Mywork() {
 
     return (
         <>
-            <div className="flex flex-col justify-center  h-[230vh] md:h-[90vh]">
+            <div className="flex flex-col justify-center  h-[220vh]  md:h-[230vh] lg:h-[90vh]">
                 <h1 className="p-2 flex justify-center font-bold text-2xl md:p-10 text-primary">My Current Work</h1>
                 <div className="flex md:flex-row m-2 md:m-10 flex-col md:gap-x-2 gap-y-1">
-                    <div className=" text-justify xl:h-auto p-1 hover:bg-primary rounded">
+                    <div className=" text-justify xl:h-auto md:h-auto p-1 hover:bg-primary rounded">
                         <img
                             src="https://images.unsplash.com/photo-1548372290-8d01b6c8e78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
                             alt="a person"

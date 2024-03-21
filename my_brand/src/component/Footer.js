@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
   <>
-  <div className="flex  flex-col justify-center items-center  h-[30vh] p-2 font-serif text-justify">
+  <div className="flex  flex-col justify-center items-center  h-[10vh] md:h-[20vh] p-2 font-serif text-justify">
     <div>
       <h1 className="p-4 text-base ">Subscribe to my website to receive notifications of updates to my work.</h1>
       <form className="flex">
@@ -22,7 +22,7 @@ export default function Footer() {
           </button>
       </form>
     </div>
-      <h1 className="p-4">&copy; 2024</h1>
+      <h1 className="p-4 font-serif">&copy; Placide TWIRINGIYIMANA 2024</h1>
   </div>
   </>
   );
