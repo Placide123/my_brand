@@ -1,15 +1,20 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+const testapi=process.env.YOUR_SERVICE_ID
+
 export default function Message() {
+  console.log("environment variable",process.env.YOUR_SERVICE_ID)
+  console.log("test enviro",testapi)
   const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, form.current, {
-        publicKey: process.env.YOUR_PUBLIC_KEY,
+      .sendForm('service_7fmynbq', 'template_m3rlwhs', form.current, {
+        publicKey: 'EdsLs_LWGir46MZ9P',
       })
       .then(
         () => {
