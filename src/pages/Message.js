@@ -1,24 +1,29 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
-const testapi=process.env.YOUR_SERVICE_ID
+
 
 export default function Message() {
-  console.log("environment variable",process.env.YOUR_SERVICE_ID)
-  console.log("test enviro",testapi)
-  const form = useRef();
 
+  console.log("crazy hello pub key ",process.env.REACT_APP_YOUR_SERVICE_ID);
+  
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_7fmynbq', 'template_m3rlwhs', form.current, {
-        publicKey: 'EdsLs_LWGir46MZ9P',
+      .sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, {
+        publicKey: process.env.REACT_APP_YOUR_PUBLIC_KEY,
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          toast.success("Success Notification !", {
+            position: toast.POSITION.TOP_RIGHT,
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -38,6 +43,7 @@ export default function Message() {
         <label className='font-bold font-serif text-primary' >Message</label>
         <textarea name="message" placeholder="Write your Message here..." className="shadow appearance-none p-2 h-32 border rounded w-full  px-4  text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-4"/>
         <input type="submit" value="Send" className="bg-primary hover:bg-primary-600 text-gray-200 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline sm:px-8 my-4 " />
+        <ToastContainer />
       </form>
     </div>
 

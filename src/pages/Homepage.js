@@ -18,13 +18,13 @@ export default function Homepage() {
         <div className="flex   gap-5 mb-2 md:mb-4 p-2">
           <a href="https://www.instagram.com/yourusername/" target="_blank" rel="noopener noreferrer" className="text-primary  text-2xl"><FaInstagram/></a>
           <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener noreferrer" className=" text-primary  text-2xl"><FaLinkedin/></a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-primary text-2xl"><FaGithub/></a>
+          <a href="https://github.com/Placide123" target="_blank" rel="noopener noreferrer" className="text-primary text-2xl"><FaGithub/></a>
           <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-primary text-2xl"><FaTwitter/></a>
         </div>
         <button className=" p-2 md:ml-2 md:p-2 bg-primary font-bold rounded md:w-[45%] lg:w-1/4 xl:w-1/5 text-gray-100 text-xl w-full flex justify-center">Let's talk</button>
       </div>
       <div className="flex justify-center items-center md:justify-center md:items-center lg:w-2/5 xl:w-10/12  ">
-        <img src={Placide} alt="bio" className=" flex justify-center items-center xl:items-end object-contain w-10/12 lg:w-11/12 xl:w-9/12 h-[50vh] rounded-full md:object-contain md:h-[60%] border-primary border-4 border-none" />
+        <img src={Placide} alt="bio" className=" flex justify-center items-center xl:items-end object-contain pt-6 w-10/12 lg:w-11/12 xl:w-9/12 h-[50vh] rounded-full md:object-contain md:h-[60%] border-primary border-4 border-none" />
       </div>
     </div>
   );
