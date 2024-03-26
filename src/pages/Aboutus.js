@@ -8,7 +8,7 @@ export default function AboutUs() {
         <div className="md:w-[20%] flex justify-center items-center mt-5">
           <img src={Placide} alt="bio" className="w-36 h-36 rounded-full" />
         </div>
-        <div className="md:w-[80%] md:p-32 p-4">
+        <div className="md:w-[80%] md:p-8 lg:p-32 p-4">
           <h2 className="flex justify-center text-bold text-3xl mb-5 ">About Me</h2>
           <p className="text-base font-normal text-justify md:text-lg font-serif">
             I am a Software Engineer with a love of collaborating with great

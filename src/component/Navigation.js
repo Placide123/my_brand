@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FiMenu } from 'react-icons/fi'
+// import { useState } from "react";
+// import { NavLink } from "react-router-dom";
+// import { FiMenu } from 'react-icons/fi'
 
 
 export default function Navigation() {
@@ -14,7 +14,7 @@ export default function Navigation() {
 
     <nav className="bg-primary fixed w-full left-0 top-0 border-gray-200  md:px-4 py-2.5 ">
       <div className="flex flex-row justify-between px-2 md:px-6">
-        <h1 className="flex items-center">T-CD</h1>
+        <h1 className="flex items-center font-bold text-gray-100 font-monalisa ">T-CD</h1>
         <a href="https://drive.google.com/file/d/1y9E-ta_P8aRJkg-lsLXzvskliXs5T01s/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="rounded border border-gray-200 text-gray-100 p-2 hover:text-primary hover:bg-gray-200">Resume</a>
       </div>
     </nav>

@@ -4,7 +4,7 @@ import { FaLinkedin } from 'react-icons/fa';
 
 export default function Homepage() {
   return (
-    <div className="flex flex-col-reverse m-2 md:flex-row md:m-6 lg:m-8 xl:m-9 h-[90vh] lg:w-full">
+    <div className="flex flex-col-reverse m-2 md:flex-row md:m-6 lg:m-8 xl:m-9 h-[100vh] md:h-[90vh] lg:w-full">
       <div className="flex flex-col justify-center items-center md:ml-12 xl:ml-32 md:items-start md:w-1/2 xl:w-3/5 hover:animate-pulse">
         <h1 className="text-xl md:text-2xl xl:text-5xl font-bold  md:mb-4 ml-0 p-2">
          <span className="text-primary mr-1"> Hi, I'm Placide</span>
