@@ -29,8 +29,8 @@ export default function Message() {
       );
   }
   return (
-    <div className="flex justify-center items-center h-[90vh] md:h-[80vh]  xl:w-[90%]">
-      <div className='flex flex-col hidden md:block bg-gray-200 rounded-2xl shadow-2xl  border border-gray-200 px-2 pt-2 pb-2  w-[90%]   md:w-3/5 lg:w-2/5 md:px-8 lg:mx-2 space-y-4 font-serif lg:text-xl'>
+    <div className="flex justify-center flex-col md:flex-row items-center h-[115vh] md:h-[80vh] md:m-4  xl:w-[90%] gap-x-8">
+      <div className='flex flex-col gap-y-2 mb-4 bg-gray-200 rounded-2xl shadow-2xl  border border-gray-200 px-2 pt-2 pb-2  w-[90%]   md:w-3/5 lg:w-2/5 md:px-8 lg:mx-2 space-y-4 font-serif lg:text-xl'>
         <h2>Phone Number: 0788347864</h2>
         <h2>Instagram: placide_twiringiyimana</h2>
         <h2>Email: castlewitty9@gmail.com</h2>
@@ -39,7 +39,7 @@ export default function Message() {
 
       </div>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col bg-gray-200 rounded-2xl shadow-2xl  border border-gray-200 px-2 pt-2 pb-2  w-[90%]   md:w-3/5 lg:w-2/5 md:px-8">
-        <div className="flex justify-center flex-col font-bold text-xl text-primary font-serif p-2">
+        <div className="flex justify-center flex-col font-bold text-xl text-primary font-serif">
           <h1 className="">Want to Hire Me?</h1>
           <h1 className='text-gray-500'>Send a Message</h1>
         </div>
